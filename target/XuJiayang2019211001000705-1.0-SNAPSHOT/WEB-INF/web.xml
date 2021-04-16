@@ -31,6 +31,10 @@
         <servlet-name>LifeCycleServlet</servlet-name>
         <servlet-class>com.XuJiayang.week3.demo.LifeCycleServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.XuJiayang.week5.demo.LoginServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LifeCycleServlet</servlet-name>
         <url-pattern>/life</url-pattern>
