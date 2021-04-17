@@ -1,12 +1,17 @@
 <%--
   Created by IntelliJ IDEA.
   User: 86130
-  Date: 2021/4/16
-  Time: 18:43
+  Date: 2021/4/17
+  Time: 18:36
   To change this template use File | Settings | File Templates.
 --%>
 <%@include file="header.jsp"%>
 <h1>Login</h1>
+<%
+    if(request.getAttribute("message")!=null){
+        out.println(request.getAttribute("message"));
+    }
+%>
 <form method="post" action="/2019211001000705XuJiayang_war_exploded/login">
     <table>
         <tr> <td>Username:</td> <td><input type="text" name="Username" required><br/></td></tr>
