@@ -11,6 +11,14 @@
         <servlet-name>LifeCycleServlet</servlet-name>
         <servlet-class>com.XuJiayang.week3.demo.LifeCycleServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.XuJiayang.controller.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateUserServlet</servlet-name>
+        <servlet-class>com.XuJiayang.controller.UpdateUserServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LifeCycleServlet</servlet-name>
         <url-pattern>/life</url-pattern>
