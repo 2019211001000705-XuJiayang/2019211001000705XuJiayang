@@ -13,7 +13,7 @@ public class RedirectServlet extends HttpServlet {
         System.out.println("before redirect ");
         //response.sendRedirect("index.jsp");
         System.out.println("after redirect ");
-        //response.sendRedirect("/2019211001000712ZhangYU_war_exploded/index.jsp");
+        //response.sendRedirect("/2019211001000705XuJiayang_war_exploded/index.jsp");
         response.sendRedirect("https://www.baidu.com");
     }
 

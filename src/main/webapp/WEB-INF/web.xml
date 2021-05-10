@@ -19,6 +19,10 @@
         <servlet-name>UpdateUserServlet</servlet-name>
         <servlet-class>com.XuJiayang.controller.UpdateUserServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AdminHomeServlet</servlet-name>
+        <servlet-class>com.XuJiayang.controller.AdminHomeServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LifeCycleServlet</servlet-name>
         <url-pattern>/life</url-pattern>
