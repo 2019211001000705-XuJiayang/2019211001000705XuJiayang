@@ -5,9 +5,9 @@
         <div class="row">
             <div class="col-sm-4 col-sm-offset-1">
                 <div class="login-form"><!--login form-->
-                    <h2>Login to your account</h2>	<%
+                    <h2>Login to your account</h2><%
                         if(!(request.getAttribute("message")==null)){
-                            out.println("<h2>"+request.getAttribute("message")+"</h2>");
+                            out.println("<h3>"+request.getAttribute("message")+"</h3>");
                         }%>
                     <%
                         Cookie[] cookies=request.getCookies();
@@ -29,9 +29,8 @@
                         }
                         //update 5 user basepath
                     %>
-
-                    <form method="post" action="<%=request.getContextPath()+"/login"%>">
-                        <input type="text" name="Username" placeholder="Username" value="<%=username%>"><br>
+                    <form method="post" action="<%=basePath+"login"%>">
+                        <input type="text" name="username" placeholder="Username" value="<%=username%>"><br>
                         <input type="password" name="password" placeholder="password" value="<%=password%>">
                         <br/>
                         <span>
@@ -41,8 +40,27 @@
                     </form>
                 </div><!--/login form-->
             </div>
+            <div class="col-sm-1">
+                <h2 class="or">OR</h2>
+            </div>
+            <div class="col-sm-4">
+                <div class="signup-form"><!--sign up form-->
+                    <h2>New User Registration!</h2>
 
-
+                    <%if(!(request.getAttribute("message")==null)){
+                        out.println("<h3>"+request.getAttribute("message")+"</h3>");
+                    }%>
+                    <form method="post" action="/2019211001000705XuJiayang_war_exploded/register">
+                        <input type="text" name="ID" placeholder="ID" />
+                        <input type="text" name="Username" placeholder="Username" />  <input type="password" name="password" placeholder="password" />   <input type="email" name="Email" placeholder="Email">
+                        <label> Gender </label><span> &nbsp;<input type="radio"
+                                                                   style="width: 15px; height: 15px; display:inline;" name="Gender" value="Male" checked/>&nbsp;Male&nbsp;<input type="radio" style="width: 15px; height: 15px;   display: inline;" name="Gender" value="Female"/>&nbsp;Female</span>
+                        <span></span>
+                        <input type="date" name="Date" required dataformatas="yyyy-dd-mm" placeholder="Date of Birth (yyyy-mm-dd)">
+                        <button type="submit" class="btn btn-default">Register</button>
+                    </form>
+                </div><!--/sign up form-->
+            </div>
         </div>
     </div>
 </section><!--/form-->
