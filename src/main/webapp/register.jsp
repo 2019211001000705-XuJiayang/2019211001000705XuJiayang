@@ -10,7 +10,6 @@ This is my register JSP page.<br>
 <h1>New User Registration</h1>
 <form method="post" action="Register">
     <table>
-        ID：<input type="text" name="ID" required><br/>
         Username：<input type="text" name="Username" required><br/>
         password：<input type="password" name="password" required minlength="8"><br/>
         Email：<input type="email" name="Email" required><br/>

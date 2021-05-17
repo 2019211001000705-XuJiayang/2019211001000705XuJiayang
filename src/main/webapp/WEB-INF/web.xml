@@ -23,6 +23,14 @@
         <servlet-name>AdminHomeServlet</servlet-name>
         <servlet-class>com.XuJiayang.controller.AdminHomeServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ProductListServlet</servlet-name>
+        <servlet-class>com.XuJiayang.controller.ProductListServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddProductServlet</servlet-name>
+        <servlet-class>com.XuJiayang.controller.AddProductServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LifeCycleServlet</servlet-name>
         <url-pattern>/life</url-pattern>
