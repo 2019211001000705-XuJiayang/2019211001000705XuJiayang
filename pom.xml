@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>XuJiayang2019211001000705</artifactId>
+    <artifactId>ZhangYu2019211001000712</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>2019211001000705XuJiayang</name>
+    <name>2019211001000712ZhangYu</name>
     <packaging>war</packaging>
 
     <properties>
@@ -41,7 +41,22 @@
             <artifactId>mssql-jdbc</artifactId>
             <version>8.4.1.jre8</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/javax.servlet/jsp-api -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.0</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
+
 
     <build>
         <plugins>
