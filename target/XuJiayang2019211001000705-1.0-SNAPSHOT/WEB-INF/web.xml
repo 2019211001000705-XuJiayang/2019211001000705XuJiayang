@@ -31,6 +31,18 @@
         <servlet-name>AddProductServlet</servlet-name>
         <servlet-class>com.XuJiayang.controller.AddProductServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ProductDetailsServlet</servlet-name>
+        <servlet-class>com.XuJiayang.controller.ProductDetailsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserListServlet</servlet-name>
+        <servlet-class>com.XuJiayang.controller.UserListServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AccountDetailsServlet</servlet-name>
+        <servlet-class>com.XuJiayang.controller.AccountDetailsServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LifeCycleServlet</servlet-name>
         <url-pattern>/life</url-pattern>
