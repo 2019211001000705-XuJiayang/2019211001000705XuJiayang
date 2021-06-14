@@ -9,17 +9,8 @@ import java.io.PrintWriter;
 import java.sql.*;
 import java.text.SimpleDateFormat;
 
-import javax.servlet.*;
-import javax.servlet.annotation.WebInitParam;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.*;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.sql.*;
-import java.text.SimpleDateFormat;
-
 @WebServlet(
-        urlPatterns = {"/register"}
+        urlPatterns = {"/Register"}
 )
 
 public class RegisterServlet extends HttpServlet {
